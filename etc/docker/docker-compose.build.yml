@@ -1,0 +1,14 @@
+version: '2'
+services:
+  builder:
+    hostname: wf_api
+    build:
+      context: ../..
+      dockerfile: etc/docker/Dockerfile.build
+    volumes:
+        - ../../src:/usr/src/app/src
+        - ../../static/:/usr/src/app/static
+        - ../../test/:/usr/src/app/test
+        - ../../config/:/usr/src/app/config
+        - ../../dist/:/usr/src/app/dist
+    command: "/os/bin/build.sh"

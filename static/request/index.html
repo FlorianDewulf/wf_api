@@ -1,0 +1,58 @@
+<!Doctype HTML/>
+<html>
+<head>
+  <title>ES6-Skeleton</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+  <link href="/app.css" rel="stylesheet">
+  <!--[if IE]>
+   <link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+   <![endif]-->
+   <!--[if lt IE 9]>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   <![endif]-->
+</head>
+<body>
+  <h3>Random joke :</h3>
+  <hr />
+  <div id="app"></div>
+  <hr />
+  <button id="btn">Wanna a good joke ?</button>
+
+  <script type="text/javascript">
+    document.addEventListener('wf-api-ready', function (event) {
+      event.data.applications.request.get(
+        'https://icanhazdadjoke.com/',
+        {
+          headers: {
+            Accept: 'text/plain'
+          }
+        },
+        (success) => {
+          document.querySelector('#app').textContent = success.responseText
+        },
+        () => {}
+      )
+      document.getElementById('btn').onclick = function () {
+        event.data.applications.request.get(
+          'https://icanhazdadjoke.com/j/a218pbMmOmb',
+          {
+            headers: {
+              Accept: 'text/plain'
+            }
+          },
+          (success) => {
+            document.querySelector('#app').textContent = success.responseText
+            document.getElementById('btn').style.display = 'none'
+          },
+          () => {}
+        )
+      }
+    });
+  </script>
+
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

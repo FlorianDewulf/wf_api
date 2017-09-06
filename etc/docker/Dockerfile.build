@@ -1,0 +1,24 @@
+FROM node:7.3.0
+
+RUN apt-get install bash
+
+RUN mkdir -p /usr/src/app
+RUN mkdir -p /os/bin
+WORKDIR /usr/src/app
+
+ARG NODE_ENV
+ENV NODE_ENV $NODE_ENV
+
+COPY /.babelrc /usr/src/app
+COPY /.eslintrc.js /usr/src/app
+COPY /package.json /usr/src/app
+COPY /postcss.config.js /usr/src/app
+
+COPY /scripts/build.sh /os/bin
+RUN chmod +x /os/bin/build.sh
+COPY /scripts/watch.sh /os/bin
+RUN chmod +x /os/bin/watch.sh
+COPY /scripts/test.sh /os/bin
+RUN chmod +x /os/bin/test.sh
+
+CMD npm start

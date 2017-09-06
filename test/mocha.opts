@@ -1,0 +1,5 @@
+--compilers js:babel-core/register
+--colors
+--sort
+--recursive
+test/specs/*

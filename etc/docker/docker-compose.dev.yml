@@ -1,0 +1,29 @@
+version: '2'
+services:
+  dev:
+    hostname: wf_api
+    build:
+      context: ../..
+      dockerfile: etc/docker/Dockerfile.build
+    ports:
+        - "8089:8089"
+    volumes:
+        - ../../src:/usr/src/app/src
+        - ../../static/:/usr/src/app/static
+        - ../../test/:/usr/src/app/test
+        - ../../config/:/usr/src/app/config
+        - ../../dist/:/usr/src/app/dist
+    command: "/os/bin/watch.sh"
+
+  tester:
+    hostname: wf_api
+    build:
+      context: ../..
+      dockerfile: etc/docker/Dockerfile.build
+    volumes:
+        - ../../src:/usr/src/app/src
+        - ../../static/:/usr/src/app/static
+        - ../../test/:/usr/src/app/test
+        - ../../config/:/usr/src/app/config
+        - ../../dist/:/usr/src/app/dist
+    command: "/os/bin/test.sh"
