@@ -1,0 +1,13 @@
+{
+  "name": "wf_proxy_api",
+  "version": "1.0.0",
+  "description": "WF proxy to call the API thanks to ajax",
+  "author": "Florian Dewulf <xplx.business@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

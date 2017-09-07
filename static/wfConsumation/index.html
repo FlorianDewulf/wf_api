@@ -1,7 +1,7 @@
 <!Doctype HTML/>
 <html>
 <head>
-  <title>ES6-Skeleton</title>
+  <title>WF Consumation</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
@@ -14,24 +14,14 @@
    <![endif]-->
 </head>
 <body>
-  <ul id="list"></ul>
-  <a href="report.html">Accéder aux stats du bundle</a>
   <script type="text/javascript">
     document.addEventListener('wf-api-ready', function (event) {
-      let ul = document.querySelector('ul#list')
-      if (ul) {
-        console.log(event.data)
-        event.data.routes.map(function (es6Skeleton) {
-          var listNode = document.createElement('li')
-          var link = document.createElement('a')
-          link.textContent = es6Skeleton.name
-          link.setAttribute('href', es6Skeleton.to);
-          listNode.appendChild(link)
-          ul.appendChild(listNode)
-        })
-      }
+      event.data.applications.wfConsumation.getData(event.data.applications.request).then(function (data) {
+        console.log(data)
+      })
     });
   </script>
+
   <script src="/vendor.js"></script>
   <script src="/app.js"></script>
 </body>

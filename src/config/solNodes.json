@@ -1,0 +1,1787 @@
+{
+  "SolNode0": {
+    "value": "SolNode0",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "SolNode1": {
+    "value": "Galatea (Neptune)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode2": {
+    "value": "Aphrodite (Venus)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SolNode3": {
+    "value": "Cordelia (Uranus)",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "SolNode4": {
+    "value": "Acheron (Pluton)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode5": {
+    "value": "Perdita (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode6": {
+    "value": "Despina (Neptune)",
+    "faction": "Corpus",
+    "type" : "Excavation"
+  },
+  "SolNode7": {
+    "value": "Epimetheus (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode8": {
+    "value": "Nix (Pluton)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode9": {
+    "value": "Rosalind (Uranus)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode10": {
+    "value": "Thebe (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode11": {
+    "value": "Tharsis (Mars)",
+    "faction": "Corpus",
+    "type" : "Détournement"
+  },
+  "SolNode12": {
+    "value": "Elion (Mercure)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode13": {
+    "value": "Bianca (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode14": {
+    "value": "Ultor (Mars)",
+    "faction": "Crossfire",
+    "type" : "Extermination"
+  },
+  "SolNode15": {
+    "value": "Pacific (Earth)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode16": {
+    "value": "Augustus (Mars)",
+    "faction": "Crossfire",
+    "type" : "Sauvetage"
+  },
+  "SolNode17": {
+    "value": "Proteus (Neptune)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SolNode18": {
+    "value": "Rhea (Saturne)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode19": {
+    "value": "Enceladus (Saturne)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode20": {
+    "value": "Telesto (Saturne)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode21": {
+    "value": "Narcissus (Pluton)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode22": {
+    "value": "Tessera (Venus)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SolNode23": {
+    "value": "Cytherean (Venus)",
+    "faction": "Corpus",
+    "type" : "Interception"
+  },
+  "SolNode24": {
+    "value": "Oro (Earth)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode25": {
+    "value": "Callisto (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Interception"
+  },
+  "SolNode26": {
+    "value": "Lith (Earth)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode27": {
+    "value": "E Prime (Earth)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode28": {
+    "value": "M Prime (Mercure)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode29": {
+    "value": "Oberon (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode30": {
+    "value": "Olympus (Mars)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode31": {
+    "value": "Anthe (Saturne)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode32": {
+    "value": "Tethys (Saturne)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode33": {
+    "value": "Ariel (Uranus)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode34": {
+    "value": "Sycorax (Uranus)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode35": {
+    "value": "Arcadia (Mars)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode36": {
+    "value": "Martialis (Mars)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode37": {
+    "value": "Pallene (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode38": {
+    "value": "Minthe (Pluton)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SolNode39": {
+    "value": "Everest (Earth)",
+    "faction": "Grineer",
+    "type" : "Excavation"
+  },
+  "SolNode40": {
+    "value": "Prospero (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode41": {
+    "value": "Arval (Mars)",
+    "faction": "Crossfire",
+    "type" : "Espionnage"
+  },
+  "SolNode42": {
+    "value": "Helene (Saturne)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode43": {
+    "value": "Cerberus (Pluton)",
+    "faction": "Corpus",
+    "type" : "Interception"
+  },
+  "SolNode44": {
+    "value": "Mimas (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode45": {
+    "value": "Ara (Mars)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode46": {
+    "value": "Spear (Mars)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode47": {
+    "value": "Janus (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode48": {
+    "value": "Regna (Pluton)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SolNode49": {
+    "value": "Larissa (Neptune)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SolNode50": {
+    "value": "Numa (Saturne)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode51": {
+    "value": "Hades (Pluton)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "SolNode52": {
+    "value": "Portia (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode53": {
+    "value": "Themisto (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "SolNode54": {
+    "value": "Silvanus (Mars)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode55": {
+    "value": "Methone (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode56": {
+    "value": "Cypress (Pluton)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode57": {
+    "value": "Sao (Neptune)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode58": {
+    "value": "Hellas (Mars)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode59": {
+    "value": "Eurasia (Earth)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode60": {
+    "value": "Caliban (Uranus)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode61": {
+    "value": "Ishtar (Venus)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode62": {
+    "value": "Neso (Neptune)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode63": {
+    "value": "Mantle (Earth)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode64": {
+    "value": "Umbriel (Uranus)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode65": {
+    "value": "Gradivus (Mars)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode66": {
+    "value": "Unda (Venus)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode67": {
+    "value": "Dione (Saturne)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode68": {
+    "value": "Vallis (Mars)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode69": {
+    "value": "Ophelia (Uranus)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode70": {
+    "value": "Cassini (Saturne)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode71": {
+    "value": "Vesper (Venus)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode72": {
+    "value": "Outer Terminus (Pluton)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SolNode73": {
+    "value": "Ananke (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode74": {
+    "value": "Carme (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SolNode75": {
+    "value": "Cervantes (Earth)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode76": {
+    "value": "Hydra (Pluton)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode77": {
+    "value": "Cupid (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode78": {
+    "value": "Triton (Neptune)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SolNode79": {
+    "value": "Cambria (Earth)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode80": {
+    "value": "Phoebe (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode81": {
+    "value": "Palus (Pluton)",
+    "faction": "Corpus",
+    "type" : "Survie"
+  },
+  "SolNode82": {
+    "value": "Calypso (Saturne)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode83": {
+    "value": "Cressida (Uranus)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode84": {
+    "value": "Nereid (Neptune)",
+    "faction": "Corpus",
+    "type" : "Détournement"
+  },
+  "SolNode85": {
+    "value": "Gaia (Earth)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode86": {
+    "value": "Aegaeon (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode87": {
+    "value": "Ganymede (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode88": {
+    "value": "Adrastea (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode89": {
+    "value": "Mariana (Earth)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode90": {
+    "value": "Miranda",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "SolNode91": {
+    "value": "Iapetus (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode92": {
+    "value": "Charon (Pluton)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode93": {
+    "value": "Keeler (Saturne)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode94": {
+    "value": "Apollodorus (Mercure)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode95": {
+    "value": "Thalassa (Neptune)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode96": {
+    "value": "Titan (Saturne)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode97": {
+    "value": "Amalthea (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode98": {
+    "value": "Desdemona (Uranus)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode99": {
+    "value": "War (Mars)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode100": {
+    "value": "Elara (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Survie"
+  },
+  "SolNode101": {
+    "value": "Kiliken (Venus)",
+    "faction": "Corpus",
+    "type" : "Excavation"
+  },
+  "SolNode102": {
+    "value": "Oceanum (Pluton)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode103": {
+    "value": "Terminus (Mercure)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode104": {
+    "value": "Fossa (Venus)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "SolNode105": {
+    "value": "Titania (Uranus)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode106": {
+    "value": "Alator (Mars)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode107": {
+    "value": "Venera (Venus)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode108": {
+    "value": "Tolstoj (Mercure)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode109": {
+    "value": "Linea (Venus)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SolNode110": {
+    "value": "Hyperion (Saturne)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode111": {
+    "value": "Juliet (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode112": {
+    "value": "Setebos (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode113": {
+    "value": "Ares (Mars)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode114": {
+    "value": "Puck (Uranus)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode115": {
+    "value": "Quirinus (Mars)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode116": {
+    "value": "Mab (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode117": {
+    "value": "Naiad (Neptune)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode118": {
+    "value": "Laomedeia (Neptune)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode119": {
+    "value": "Caloris (Mercure)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode120": {
+    "value": "Halimede (Neptune)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode121": {
+    "value": "Carpo (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode122": {
+    "value": "Stephano (Uranus)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode123": {
+    "value": "V Prime (Venus)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode124": {
+    "value": "Trinculo (Uranus)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode125": {
+    "value": "Io (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SolNode126": {
+    "value": "Metis (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SolNode127": {
+    "value": "Psamathe (Neptune)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "SolNode128": {
+    "value": "E Gate (Venus)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode129": {
+    "value": "SolNode129",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "SolNode130": {
+    "value": "Lares (Mercure)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode131": {
+    "value": "Pallas (Ceres)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode132": {
+    "value": "Bode (Ceres)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode133": {
+    "value": "Vedic (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode134": {
+    "value": "Varro (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode135": {
+    "value": "Thon (Ceres)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode136": {
+    "value": "Olla (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode137": {
+    "value": "Nuovo (Ceres)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode138": {
+    "value": "Ludi (Ceres)",
+    "faction": "Grineer",
+    "type" : "Détournement"
+  },
+  "SolNode139": {
+    "value": "Lex (Ceres)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode140": {
+    "value": "Kiste (Ceres)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode141": {
+    "value": "Ker (Ceres)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode142": {
+    "value": "Hapke (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode143": {
+    "value": "Gefion (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode144": {
+    "value": "Exta (Ceres)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode145": {
+    "value": "Egeria (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode146": {
+    "value": "Draco (Ceres)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode147": {
+    "value": "Cinxia (Ceres)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode148": {
+    "value": "Cerium (Ceres)"
+  },
+  "SolNode149": {
+    "value": "Casta (Ceres)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode150": {
+    "value": "Albedo (Ceres)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode151": {
+    "value": "Acanth (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode152": {
+    "value": "Ascar (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode153": {
+    "value": "Brugia (Eris)",
+    "faction": "Infesté",
+    "type" : "Sauvetage"
+  },
+  "SolNode154": {
+    "value": "Candiru (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode155": {
+    "value": "Cosis (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode156": {
+    "value": "Cyath (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode157": {
+    "value": "Giardia (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode158": {
+    "value": "Gnathos (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode159": {
+    "value": "Lepis (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode160": {
+    "value": "Histo (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode161": {
+    "value": "Hymeno (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode162": {
+    "value": "Isos (Eris)",
+    "faction": "Infesté",
+    "type" : "Capture"
+  },
+  "SolNode163": {
+    "value": "Ixodes (Eris)"
+  },
+  "SolNode164": {
+    "value": "Kala-azar (Eris)",
+    "faction": "Infesté",
+    "type" : "Defense"
+  },
+  "SolNode165": {
+    "value": "Sporid (Eris)",
+    "faction": "Infesté",
+    "type" : "Ruche Sabotage"
+  },
+  "SolNode166": {
+    "value": "Nimus (Eris)",
+    "faction": "Infesté",
+    "type" : "Survie"
+  },
+  "SolNode167": {
+    "value": "Oestrus (Eris)",
+    "faction": "Infesté",
+    "type" : "Défense mobile"
+  },
+  "SolNode168": {
+    "value": "Phalan (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode169": {
+    "value": "Psoro (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode170": {
+    "value": "Ranova (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode171": {
+    "value": "Saxis (Eris)",
+    "faction": "Infesté",
+    "type" : "Extermination"
+  },
+  "SolNode172": {
+    "value": "Xini (Eris)",
+    "faction": "Infesté",
+    "type" : "Interception"
+  },
+  "SolNode173": {
+    "value": "Solium (Eris)",
+    "faction": "Infesté",
+    "type" : "Défense mobile"
+  },
+  "SolNode174": {
+    "value": "Sparga (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode175": {
+    "value": "Naeglar (Eris)",
+    "faction": "Infesté",
+    "type" : "Ruche"
+  },
+  "SolNode176": {
+    "value": "Viver (Eris)",
+    "faction": "Infesté",
+    "type" : "Outdated"
+  },
+  "SolNode177": {
+    "value": "Kappa (Sedna)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode178": {
+    "value": "Hyosube (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode179": {
+    "value": "Jengu (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode180": {
+    "value": "Undine (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode181": {
+    "value": "Adaro (Sedna)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode182": {
+    "value": "Camenae (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode183": {
+    "value": "Vodyanoi (Sedna)",
+    "faction": "Grineer",
+    "type" : "Arene"
+  },
+  "SolNode184": {
+    "value": "Rusalka (Sedna)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode185": {
+    "value": "Berehynia (Sedna)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode186": {
+    "value": "Phithale (Sedna)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode187": {
+    "value": "Selkie (Sedna)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode188": {
+    "value": "Kelpie (Sedna)",
+    "faction": "Grineer",
+    "type" : "Sabotage"
+  },
+  "SolNode189": {
+    "value": "Naga (Sedna)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode190": {
+    "value": "Nakki (Sedna)",
+    "faction": "Grineer",
+    "type" : "Arene"
+  },
+  "SolNode191": {
+    "value": "Marid (Sedna)",
+    "faction": "Grineer",
+    "type" : "Détournement"
+  },
+  "SolNode192": {
+    "value": "Tikoloshe (Sedna)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode193": {
+    "value": "Merrow (Sedna)",
+    "faction": "Grineer",
+    "type" : "Assassinat"
+  },
+  "SolNode194": {
+    "value": "Ponaturi (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode195": {
+    "value": "Hydron (Sedna)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode196": {
+    "value": "Charybdis (Sedna)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode197": {
+    "value": "Graeae (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode198": {
+    "value": "Scylla (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode199": {
+    "value": "Yam (Sedna)",
+    "faction": "Grineer",
+    "type" : "Arene"
+  },
+  "SolNode200": {
+    "value": "Veles (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode201": {
+    "value": "Tiamat (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode202": {
+    "value": "Yemaja (Sedna)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode203": {
+    "value": "Abaddon (Europe)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SolNode204": {
+    "value": "Armaros (Europe)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode205": {
+    "value": "Baal (Europe)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SolNode206": {
+    "value": "Eligor (Europe)"
+  },
+  "SolNode207": {
+    "value": "Gamygyn (Europe)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode208": {
+    "value": "Lillith (Europe)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode209": {
+    "value": "Morax (Europe)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SolNode210": {
+    "value": "Naamah (Europe)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "SolNode211": {
+    "value": "Ose (Europe)",
+    "faction": "Corpus",
+    "type" : "Interception"
+  },
+  "SolNode212": {
+    "value": "Paimon (Europe)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SolNode213": {
+    "value": "Shax (Europe)"
+  },
+  "SolNode214": {
+    "value": "Sorath (Europe)",
+    "faction": "Corpus",
+    "type" : "Détournement"
+  },
+  "SolNode215": {
+    "value": "Valac (Europe)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode216": {
+    "value": "Valefor (Europe)",
+    "faction": "Corpus",
+    "type" : "Excavation"
+  },
+  "SolNode217": {
+    "value": "Orias (Europe)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SolNode218": {
+    "value": "Zagan (Europe)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode219": {
+    "value": "Beleth (Europe)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SolNode220": {
+    "value": "Kokabiel (Europe)",
+    "faction": "Corpus",
+    "type" : "Sabotage"
+  },
+  "SolNode221": {
+    "value": "Neruda (Mercure)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode222": {
+    "value": "Eminescu (Mercure)",
+    "faction": "Grineer",
+    "type" : "Outdated"
+  },
+  "SolNode223": {
+    "value": "Boethius (Mercure)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode224": {
+    "value": "Odin (Mercure)",
+    "faction": "Grineer",
+    "type" : "Interception"
+  },
+  "SolNode225": {
+    "value": "Suisei (Mercure)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode226": {
+    "value": "Pantheon (Mercure)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode227": {
+    "value": "Verdi (Mercure)"
+  },
+  "SolNode400" : {
+    "value" : "Teshub (Néant)",
+    "faction": "Corrompu",
+    "type" : "Extermination"
+  },
+  "SolNode401" : {
+    "value" : "Hepit (Néant)",
+    "faction": "Corrompu",
+    "type" : "Capture"
+  },
+  "SolNode402" : {
+    "value" : "Taranis (Néant)",
+    "faction": "Corrompu",
+    "type" : "Defense"
+  },
+  "SolNode403" : {
+    "value" : "Tiwaz (Néant)",
+    "faction": "Corrompu",
+    "type" : "Défense mobile"
+  },
+  "SolNode404" : {
+    "value" : "Striborg (Néant)",
+    "faction": "Corrompu",
+    "type" : "Orokin Sabotage"
+  },
+  "SolNode405" : {
+    "value" : "Ani (Néant)",
+    "faction": "Corrompu",
+    "type" : "Survie"
+  },
+  "SolNode406" : {
+    "value" : "Ukko (Néant)",
+    "faction" : "Corrompu",
+    "type": "Capture"
+  },
+  "SolNode407" : {
+    "value" : "Oxomoco (Néant)",
+    "faction": "Corrompu",
+    "type" : "Extermination"
+  },
+  "SolNode408" : {
+    "value" : "Belenus (Néant)",
+    "faction": "Corrompu",
+    "type" : "Defense"
+  },
+  "SolNode409" : {
+    "value" : "Mot (Néant)",
+    "faction": "Corrompu",
+    "type" : "Survie"
+  },
+  "SolNode410" : {
+    "value" : "Aten (Néant)",
+    "faction": "Corrompu",
+    "type" : "Défense mobile"
+  },
+  "SolNode411" : {
+    "value" : "SolNode411 (Néant)",
+    "faction": "Corrompu",
+    "type" : "Outdated"
+  },
+  "SolNode412" : {
+    "value" : "Mithra (Néant)",
+    "faction": "Corrompu",
+    "type" : "Interception"
+  },
+  "SolNode413" : {
+    "value" : "SolNode413 (Néant)",
+    "faction": "Corrompu",
+    "type" : "Outdated"
+  },
+  "SolNode741": {
+    "value": "Koro (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Assault"
+  },
+  "SolNode742": {
+    "value": "Nabuk (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Capture"
+  },
+  "SolNode743": {
+    "value": "Rotuma (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode744": {
+    "value": "Taveuni (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Survie"
+  },
+  "SolNode745": {
+    "value": "Tamu (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Defense"
+  },
+  "SolNode746": {
+    "value": "Dakata (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode747": {
+    "value": "Pago (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Espionnage"
+  },
+  "SolNode748": {
+    "value": "Garus (Kuva Fortress)",
+    "faction": "Grineer",
+    "type" : "Sauvetage"
+  },
+  "SolNode901": {
+    "value": "Caduceus",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "SolNode902": {
+    "value": "Montes (Venus)",
+    "faction": "Corpus",
+    "type" : "Extermination (Archwing)"
+  },
+  "SolNode903": {
+    "value": "Erpo (Earth)",
+    "faction": "Grineer",
+    "type" : "Défense mobile (Archwing)"
+  },
+  "SolNode904": {
+    "value": "Syrtis (Mars)",
+    "faction": "Grineer",
+    "type" : "Extermination (Archwing)"
+  },
+  "SolNode905": {
+    "value": "Galilea (Jupiter)",
+    "faction": "Corpus",
+    "type" : "Sabotage (Archwing)"
+  },
+  "SolNode906": {
+    "value": "Pandora (Saturne)",
+    "faction": "Grineer",
+    "type" : "Poursuite (Archwing)"
+  },
+  "SolNode907": {
+    "value": "Caelus (Uranus)",
+    "faction": "Grineer",
+    "type" : "Interception (Archwing)"
+  },
+  "SolNode908": {
+    "value": "Salacia (Neptune)",
+    "faction": "Corpus",
+    "type" : "Défense mobile (Archwing)"
+  },
+  "SolNode300" : {
+    "value" : "Plato (Lua)",
+	"faction" : "Grineer",
+    "type" : "Extermination"
+  },
+  "SolNode301" : {
+    "value" : "Grimaldi (Lua)",
+	"faction" : "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode302" : {
+    "value" : "Tycho (Lua)",
+    "faction" : "Corpus",
+    "type" : "Survie"
+  },
+  "SolNode304" : {
+    "value" : "Copernicus (Lua)",
+    "faction": "Grineer",
+    "type" : "Défense mobile"
+  },
+  "SolNode305" : {
+    "value" : "Stöfler (Lua)",
+	"faction" : "Corpus",
+    "type" : "Survie"
+  },
+  "SolNode306" : {
+    "value" : "Pavlov (Lua)",
+	"faction" : "Corpus",
+    "type" : "Espionnage"
+  },
+  "SolNode307" : {
+    "value" : "Zeipel (Lua)",
+	"faction" : "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SettlementNode1": {
+    "value": "Roche (Phobos)",
+    "faction": "Corpus",
+    "type" : "Extermination"
+  },
+  "SettlementNode2": {
+    "value": "Skyresh (Phobos)",
+    "faction": "Corpus",
+    "type" : "Capture"
+  },
+  "SettlementNode3": {
+    "value": "Stickney (Phobos)",
+    "faction": "Corpus",
+    "type" : "Survie"
+  },
+  "SettlementNode4": {
+    "value": "Drunlo (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode5": {
+    "value": "Grildrig (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode6": {
+    "value": "Limtoc (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode7": {
+    "value": "Hall (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode8": {
+    "value": "Reldresal (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode9": {
+    "value": "Clustril (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode10": {
+    "value": "Kepler (Phobos)",
+    "faction": "Corpus",
+    "type" : "Course poursuite (Archwing)"
+  },
+  "SettlementNode11": {
+    "value": "Gulliver (Phobos)",
+    "faction": "Corpus",
+    "type" : "Defense"
+  },
+  "SettlementNode12": {
+    "value": "Monolith (Phobos)",
+    "faction": "Corpus",
+    "type" : "Sauvetage"
+  },
+  "SettlementNode13": {
+    "value": "D'Arrest (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode14": {
+    "value": "Shklovsky (Phobos)",
+    "faction": "Corpus",
+    "type" : "Espionnage"
+  },
+  "SettlementNode15": {
+    "value": "Sharpless (Phobos)",
+    "faction": "Corpus",
+    "type" : "Défense mobile"
+  },
+  "SettlementNode16": {
+    "value": "Wendell (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode17": {
+    "value": "Flimnap (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode18": {
+    "value": "Opik (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode19": {
+    "value": "Todd (Phobos)",
+    "faction": "Corpus",
+    "type" : "Outdated"
+  },
+  "SettlementNode20": {
+    "value": "Iliad (Phobos)",
+    "faction": "Corpus",
+    "type" : "Assassinat"
+  },
+  "MercureHUB": {
+    "value": "Larunda Relais (Mercure)",
+    "faction": "Grineer",
+    "type" : "Relais"
+  },
+  "VenusHUB": {
+    "value": "Vesper Relais (Venus)",
+    "faction": "Corpus",
+    "type" : "Relais"
+  },
+  "EarthHUB": {
+    "value": "Strata Relais (Earth)",
+    "faction": "Grineer",
+    "type" : "Relais"
+  },
+  "SaturneHUB": {
+    "value": "Kronia Relais (Saturne)",
+    "faction": "Grineer",
+    "type" : "Relais"
+  },
+  "ErisHUB": {
+    "value": "Kuiper Relais (Eris)",
+    "faction": "Infesté",
+    "type" : "Relais"
+  },
+  "EuropeHUB": {
+    "value": "Leonov Relais (Europe)",
+    "faction": "Corpus",
+    "type" : "Relais"
+  },
+  "PlutonHUB": {
+    "value": "Orcus Relais (Pluton)",
+    "faction": "Corpus",
+    "type" : "Relais"
+  },
+  "EventNode0": {
+    "value": "Balor",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode1": {
+    "value": "Tethra",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode2": {
+    "value": "Operation Gate Crash",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode3": {
+    "value": "Elatha",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode4": {
+    "value": "Bres",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "eventnode5": {
+    "value": "Birog",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode6": {
+    "value": "Tyl Reygor Seal Lab",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode7": {
+    "value": "Buarainech",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode8": {
+    "value": "Corb",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode9": {
+    "value": "Operation Gate Crash Pt. 2",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode10": {
+    "value": "Lugh",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode11": {
+    "value": "Nemed",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode12": {
+    "value": "Operation Cryotic Front",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode13": {
+    "value": "Shifting Sands",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode14": {
+    "value": "Gate Crash",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode15": {
+    "value": "Operation Cryotic Front",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode16": {
+    "value": "Operation Cryotic Front",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode17": {
+    "value": "Operation Cryotic Front",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode18": {
+    "value": "Operation Blackout Pt. 1",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode19": {
+    "value": "Operation Blackout Pt. 1",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode20": {
+    "value": "Tyl Regor Sea Lab",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode22": {
+    "value": "Tyl Regor Sea Lab",
+    "faction": "Sentient",
+    "type" : "Outdated"
+  },
+  "EventNode761": {
+    "value": "The Index",
+    "faction": "Corpus",
+    "type" : "Arene"
+  },
+  "EventNode762": {
+    "value": "The Index pt 2",
+    "faction": "Corpus",
+    "type" : "Arene"
+  },
+  "EventNode763": {
+    "value": "The Index Endurance",
+    "faction": "Corpus",
+    "type" : "Arene"
+  },
+  "PvpNode0": {
+    "value": "Conclave Capture the Cephalon",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode1": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode2": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode3": {
+    "value": "Conclave Capture the Cephalon",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode4": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode5": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode6": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode7": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode8": {
+    "value": "Conclave",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode9": {
+    "value": "Conclave Team Domination",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode10": {
+    "value": "Conclave Domination",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode11": {
+    "value": "Conclave Domination",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode12": {
+    "value": "Conclave Domination",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode13": {
+    "value": "Tactical Alert: Snoball Fight!",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "PvpNode14": {
+    "value": "Conclave: Quick Steel",
+    "faction": "Tenno",
+    "type" : "Conclave"
+  },
+  "ClanNode0": {
+    "value": "Romula (Venus)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode1": {
+    "value": "Malva (Venus)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode2": {
+    "value": "Coba (Earth)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode3": {
+    "value": "Tikal (Earth)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Excavation"
+  },
+  "ClanNode4": {
+    "value": "Sinai (Jupiter)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode5": {
+    "value": "Cameria (Jupiter)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode6": {
+    "value": "Larzac (Europe)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode7": {
+    "value": "Cholistan (Europe)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Excavation"
+  },
+  "ClanNode8": {
+    "value": "Kadesh (Mars)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode9": {
+    "value": "Wahiba (Mars)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode10": {
+    "value": "Memphis (Phobos)",
+    "faction": "Infesté",
+    "type" : "Désertion"
+  },
+  "ClanNode11": {
+    "value": "Zeugma (Phobos)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode12": {
+    "value": "Caracol (Saturne)",
+    "faction": "Infesté",
+    "type" : "Désertion"
+  },
+  "ClanNode13": {
+    "value": "Piscinas (Saturne)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode14": {
+    "value": "Amarna (Sedna)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode15": {
+    "value": "Sangeru (Sedna)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode16": {
+    "value": "Ur (Uranus)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode17": {
+    "value": "Assur (Uranus)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Sabotage"
+  },
+  "ClanNode18": {
+    "value": "Akkad (Eris)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode19": {
+    "value": "Zabala (Eris)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode20": {
+    "value": "Yursa (Neptune)",
+    "faction": "Infesté",
+    "type" : "Désertion"
+  },
+  "ClanNode21": {
+    "value": "Kelashin (Neptune)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode22": {
+    "value": "Seimeni (Ceres)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode23": {
+    "value": "Gabii (Ceres)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Survie"
+  },
+  "ClanNode24": {
+    "value": "Sechura (Pluton)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Defense"
+  },
+  "ClanNode25": {
+    "value": "Hieracon (Pluton)",
+    "faction": "Infesté",
+    "type" : "Dark Sector Excavation"
+  },
+  "/Lotus/Types/Keys/SortieBossKeyPhorid" : {
+    "value" : "Sortie Boss: Phorid",
+    "faction" : "Infesté",
+    "type" : "Assassinat"
+  }
+}

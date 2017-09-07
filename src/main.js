@@ -1,8 +1,10 @@
 import request from './modules/request'
+import wfConsumation from './modules/wfConsumation'
 import routes from '../config/routes'
 
 export {
-  request
+  request,
+  wfConsumation
 }
 
 function startApplication () {
@@ -12,7 +14,8 @@ function startApplication () {
     eventLoad.initEvent('wf-api-ready', true, true)
     eventLoad.data = {
       applications: {
-        request
+        request,
+        wfConsumation
       },
       routes
     }

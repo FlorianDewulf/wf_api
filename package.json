@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config config/webpack/dev-webpack.config.js -d --watch",
-    "dev-server": "webpack-dev-server --config config/webpack/dev-webpack.config.js --inline --hot --https --watch --host 0.0.0.0 --port 8089",
+    "dev-server": "webpack-dev-server --config config/webpack/dev-webpack.config.js --inline --hot --watch --host 0.0.0.0 --port 8090",
     "start": "npm run dev-server",
     "lint": "eslint --ext .js src --ext .jsx src --ext .js test/specs",
     "prebuild": "npm run testJunit",
@@ -17,6 +17,9 @@
   },
   "author": "Lund",
   "license": "ISC",
+  "dependencies": {
+    "moment": "2.18.1"
+  },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.23.1",

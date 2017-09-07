@@ -1,6 +1,6 @@
 # WF API
 
-Consume the Warframe API
+Consume the Warframe API. To request it with ajax, an Express server is available as a proxy (we can't use ajax to the Warframe API)
 
 ## Requirements
 
@@ -15,12 +15,12 @@ Consume the Warframe API
 If you use docker, you don't have to do anything.
 If you don't use docker :
 
-    $ npm i
+    $ npm i && cd server && npm i
 
 
 ## Start the application
 
-    $ rake watch
+    $ rake start
 
 or
 
@@ -29,8 +29,26 @@ or
 or if you don't use docker
     
     $ npm run dev-server
+    $ cd server
+    $ npm start
 
-## Build the application
+## Stop the application
+
+    $ rake stop
+
+or
+
+    $ docker stop wfapi_dev_1 wfapi_dev-server_1
+
+or if you don't use docker, stop the two previous process launched by the start application
+
+## Restart the application
+
+    $ rake restart
+
+or the process of "Stop the application" and "Start the application"
+
+## Build the application (front)
 
     $ rake build
 
