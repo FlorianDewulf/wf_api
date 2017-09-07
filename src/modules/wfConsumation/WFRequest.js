@@ -17,6 +17,7 @@ export default class WFRequest {
           this.content = cleaner.cleanPayload(response)
           // Can be done in parallel with multiple promises
           this.content.Alerts = formatter.formatAlert(this.content.Alerts)
+          this.content.Invasions = formatter.formatInvasion(this.content.Invasions)
           resolve(this)
         },
         (errorResponse) => {
