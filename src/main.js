@@ -1,10 +1,12 @@
 import request from './modules/request'
 import wfConsumation from './modules/wfConsumation'
+import htmlGenerator from './modules/htmlGenerator'
 import routes from '../config/routes'
 
 export {
   request,
-  wfConsumation
+  wfConsumation,
+  htmlGenerator
 }
 
 function startApplication () {
@@ -15,7 +17,8 @@ function startApplication () {
     eventLoad.data = {
       applications: {
         request,
-        wfConsumation
+        wfConsumation,
+        htmlGenerator
       },
       routes
     }

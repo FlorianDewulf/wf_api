@@ -1,11 +1,45 @@
 @import './test.scss';
 
-div {
-  border: 1px solid #FF6464;
-  padding: 5px;
-  margin: 5px;
-}
-
 a {
   color: white;
+}
+
+.template {
+  display: none !important;
+}
+
+.flexRowContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flexColContainer {
+  display: flex;
+  flex-flow: column wrap;
+
+  & > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.alertBox {
+  width: 300px;
+}
+
+.invasionBox {
+  width: 400px;
+}
+
+.voidBox {
+  width: 300px;
+}
+
+.sortieBox {
+  width: 400px;
+}
+
+.baroBox {
+  width: 200px;
 }
