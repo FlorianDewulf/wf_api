@@ -17,6 +17,14 @@ If you don't use docker :
 
     $ npm i && cd server && npm i
 
+If you are on Windows, if you use Docker and you don't have the CRLF preservation in your git config, you need to run this command :
+
+    $ dos2unix.exe ./scripts/*
+
+To add the CRLF preservation to your git config, create or add to your ~/.gitconfig :
+
+    [core]
+	  autocrlf = false
 
 ## Start the application
 
