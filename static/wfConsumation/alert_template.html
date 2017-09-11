@@ -1,0 +1,26 @@
+<div class="template alertBox" id="alert">
+  <div hg-loop="alert in alerts">
+    <p hg-text="alert.location"></p>
+    <p>
+      <span>Level : </span>
+      <span hg-text="alert.minLevel"></span>
+      <span> - </span>
+      <span hg-text="alert.maxLevel"></span>
+    </p>
+    <p hg-text="alert[missionType]"></p>
+    <p>
+      <span>Finished </span>
+      <span hg-text="alert.remaining"></span>
+    </p>
+    <p>
+      <span>Credits : </span>
+      <span hg-text="alert.reward.credits"></span>
+    </p>
+    <p hg-loop="item in alert.reward.items">
+      <span hg-text="item.quantity"></span>
+      <span>&nbsp;</span>
+      <span hg-text="item.name"></span>
+    </p>
+    <hr />
+  </div>
+</div>

@@ -22,70 +22,50 @@
     <div class="flexColContainer" id="targetBaro"></div>
   </div>
 
-  <div class="template alertBox" id="alert">
-    <div hg-loop="alert in alerts">
-      <p hg-text="alert.location"></p>
-      <p>
-        <span>Level : </span>
-        <span hg-text="alert.minLevel"></span>
-        <span> - </span>
-        <span hg-text="alert.maxLevel"></span>
-      </p>
-      <p hg-text="alert[missionType]"></p>
-      <p>
-        <span>Finished </span>
-        <span hg-text="alert.remaining"></span>
-      </p>
-      <p>
-        <span>Credits : </span>
-        <span hg-text="alert.reward.credits"></span>
-      </p>
-      <p hg-loop="item in alert.reward.items">
-        <span hg-text="item.quantity"></span>
-        <span>&nbsp;</span>
-        <span hg-text="item.name"></span>
-      </p>
-      <hr />
-    </div>
-  </div>
   <div class="template invasionBox" id="invasion">invasion</div>
   <div class="template voidBox" id="void">void</div>
   <div class="template sortieBox" id="sortie">sortie</div>
   <div class="template baroBox" id="baro">baro</div>
 
+  <div id="templateContainer"></div>
+
   <script type="text/javascript">
     document.addEventListener('wf-api-ready', function (event) {
-      event.data.applications.htmlGenerator.registerTemplates([
-        {
-          name: 'alert',
-          node: document.getElementById('alert')
-        },
-        {
-          name: 'invasion',
-          node: document.getElementById('invasion')
-        },
-        {
-          name: 'void',
-          node: document.getElementById('void')
-        },
-        {
-          name: 'sortie',
-          node: document.getElementById('sortie')
-        },
-        {
-          name: 'baro',
-          node: document.getElementById('baro')
-        },
-      ])
-      event.data.applications.wfConsumation.getData(event.data.applications.request).then(function (wfInformations) {
-        console.log(wfInformations)
-        event.data.applications.htmlGenerator.applyTemplate('alert', '#targetAlerts', wfInformations.datas)
-        event.data.applications.htmlGenerator.applyTemplate('invasion', '#targetInvasions', wfInformations.datas.invasions)
-        event.data.applications.htmlGenerator.applyTemplate('void', '#targetVoid', wfInformations.datas.fissures)
-        event.data.applications.htmlGenerator.applyTemplate('sortie', '#targetSortie', wfInformations.datas.sortie)
-        event.data.applications.htmlGenerator.applyTemplate('baro', '#targetBaro', wfInformations.datas.baro)
+      event.data.applications.htmlGenerator.loadExternalTemplates(event.data.applications.request, [
+        './alert_template.html'
+      ], '#templateContainer').then(() => {
+        event.data.applications.htmlGenerator.registerTemplates([
+          {
+            name: 'alert',
+            node: document.getElementById('alert')
+          },
+          {
+            name: 'invasion',
+            node: document.getElementById('invasion')
+          },
+          {
+            name: 'void',
+            node: document.getElementById('void')
+          },
+          {
+            name: 'sortie',
+            node: document.getElementById('sortie')
+          },
+          {
+            name: 'baro',
+            node: document.getElementById('baro')
+          },
+        ])
+        event.data.applications.wfConsumation.getData(event.data.applications.request).then(function (wfInformations) {
+          console.log(wfInformations)
+          event.data.applications.htmlGenerator.applyTemplate('alert', '#targetAlerts', wfInformations.datas)
+          event.data.applications.htmlGenerator.applyTemplate('invasion', '#targetInvasions', wfInformations.datas.invasions)
+          event.data.applications.htmlGenerator.applyTemplate('void', '#targetVoid', wfInformations.datas.fissures)
+          event.data.applications.htmlGenerator.applyTemplate('sortie', '#targetSortie', wfInformations.datas.sortie)
+          event.data.applications.htmlGenerator.applyTemplate('baro', '#targetBaro', wfInformations.datas.baro)
+        })
       })
-    });
+    })
   </script>
 
   <script src="/vendor.js"></script>

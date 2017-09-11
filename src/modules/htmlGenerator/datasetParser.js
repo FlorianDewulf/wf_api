@@ -31,11 +31,24 @@ function getData(datas, key, aliases) {
 // Set text content thanks to data-hg-text
 function parseTxt (node, datas, aliases) {
   if (node.getAttribute('hg-text')) {
-    let _data = getData(datas, node.getAttribute('hg-text'), aliases)
+    let _data = getData(datas, node.getAttribute('hg-text').trim(), aliases)
     if (typeof _data !== 'undefined') {
       node.textContent = _data
       node.removeAttribute('hg-text')
     }
+  }
+  // to edit
+  let innerHtml = node.innerHTML
+  let bladeNotations = innerHtml.match(/\{\{[ \t]*[A-Za-z0-9_\.\[\]]+[ \t]*\}\}/g)
+  if (bladeNotations) {
+    for (let bladeNotation in bladeNotations) {
+      let internalValue = bladeNotations[bladeNotation].match(/\{\{[ \t]*([A-Za-z0-9_\.\[\]]+)[ \t]*\}\}/)
+      let val = getData(datas, internalValue[1], aliases)
+      if (typeof val !== 'undefined') {
+        innerHtml = innerHtml.replace(bladeNotations[bladeNotation], val)
+      }
+    }
+    node.innerHTML = innerHtml
   }
 }
 
@@ -48,19 +61,17 @@ function parseLoop (node, datas, aliases) {
   }
   if (node.getAttribute('hg-loop')) {
     // Get the pattern "xx in xxx"
-    let match = node.getAttribute('hg-loop').match(/([A-za-z_]+) in ([A-za-z_]+)/)
+    let match = node.getAttribute('hg-loop').trim().match(/([A-za-z_]+) in ([A-za-z_]+)/)
     if (match && match.length === 3) {
       let aliasValue = getData(datas, match[2], aliases)
       // Set up the alias to get the data
       if (typeof aliasValue !== 'undefined') {
+        let parent = node.parentNode
         aliases[match[1]] = {
           value: aliasValue,
           iteration: 0
         }
-      }
-      if (typeof aliasValue !== 'undefined') {
         returnValue.isParsed = true
-        let parent = node.parentNode
         
         // create container to keep the position in the DOM
         let container = document.createElement('div')
@@ -84,6 +95,7 @@ function parseLoop (node, datas, aliases) {
 
 // The recursive call to parse the attributes
 function recursiveParsing (node, datas, aliases = {}) {
+  parseTxt(node, datas, aliases)
   parseTxt(node, datas, aliases)
   let loop = parseLoop(node, datas, aliases)
   if (!(loop.hasLoop && loop.isParsed)) {

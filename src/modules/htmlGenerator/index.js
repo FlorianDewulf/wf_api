@@ -15,7 +15,55 @@ function mapData (node, datas, recursive = false) {
   return nodeToInsert
 }
 
+// Get the template thanks to Ajax
+function loadTemplate (request, url) {
+  return new Promise ((resolve, reject) => {
+    request.get(url, {}, (result) => {
+      resolve(result.responseText)
+    })
+  })
+}
+
 export default {
+  /**
+   * Register templates and remove it from the dom to reuse it
+   */
+  loadExternalTemplates: (request, urls, templateContainer) => {
+    let promises = []
+    let nodeTarget = templateContainer
+    let error = false
+
+    // If the templateContainer is a string, we get the node
+    if (typeof templateContainer === 'string') {
+      nodeTarget = document.querySelector(templateContainer)
+    }
+
+    // Check the target node existence
+    if (!nodeTarget) {
+      console.log('Target doesn\'t exist')
+      error = true 
+    }
+
+    return new Promise ((resolve, reject) => {
+      if (error) {
+        resolve()
+        return
+      }
+      if (typeof urls === 'string') {
+        promises.push(loadTemplate(request, urls))
+      } else {
+        for (let url of urls) {
+          promises.push(loadTemplate(request, url))
+        }
+      }
+      Promise.all(promises).then((datas) => {
+        for (let index in datas) {
+          nodeTarget.innerHTML += datas[index]
+        }
+        resolve()
+      })
+    })
+  },
   /**
    * Register templates and remove it from the dom to reuse it
    */
