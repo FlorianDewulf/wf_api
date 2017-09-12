@@ -18,7 +18,8 @@
   "author": "Lund",
   "license": "ISC",
   "dependencies": {
-    "moment": "2.18.1"
+    "moment": "2.18.1",
+    "warframe-worldstate-data": "https://github.com/WFCD/warframe-worldstate-data/tarball/l10n"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

@@ -1,7 +1,7 @@
 import moment from 'moment'
 import constants from '../constants'
 import languages from '../../../config/languages.json'
-import nodes from '../../../config/solNodes.json'
+import { solNodes } from 'warframe-worldstate-data'
 
 // Check existence
 function exists (value) {
@@ -52,7 +52,7 @@ function getMissionType (code) {
 
 // Get the node information
 function getNode (code) {
-  return existsOrDefault(nodes[code], code)
+  return existsOrDefault(solNodes[code], code)
 }
 
 export default {
