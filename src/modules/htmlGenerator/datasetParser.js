@@ -37,6 +37,10 @@ function parseTxt (node, datas, aliases) {
       node.removeAttribute('hg-text')
     }
   }
+}
+
+// Set text content thanks to blade notation
+function parseBlade (node, datas, aliases) {
   // to edit
   let innerHtml = node.innerHTML
   let bladeNotations = innerHtml.match(/\{\{[ \t]*[A-Za-z0-9_\.\[\]]+[ \t]*\}\}/g)
@@ -57,11 +61,12 @@ function parseTxt (node, datas, aliases) {
 function parseLoop (node, datas, aliases) {
   let returnValue = {
     hasLoop: (node.getAttribute('hg-loop') !== null),
-    isParsed: false
+    isParsed: false,
+    newNode: node
   }
   if (node.getAttribute('hg-loop')) {
     // Get the pattern "xx in xxx"
-    let match = node.getAttribute('hg-loop').trim().match(/([A-za-z_]+) in ([A-za-z_]+)/)
+    let match = node.getAttribute('hg-loop').trim().match(/([A-za-z_]+) in ([A-za-z_.()]+)/)
     if (match && match.length === 3) {
       let aliasValue = getData(datas, match[2], aliases)
       // Set up the alias to get the data
@@ -80,6 +85,7 @@ function parseLoop (node, datas, aliases) {
         parent.insertBefore(container, node)
         let template = parent.removeChild(node)
         template.removeAttribute('hg-loop')
+        returnValue.newNode = container
 
         for (let i = 0; i < aliasValue.length; ++i) {
           aliases[match[1]].iteration = i
@@ -96,17 +102,21 @@ function parseLoop (node, datas, aliases) {
 // The recursive call to parse the attributes
 function recursiveParsing (node, datas, aliases = {}) {
   parseTxt(node, datas, aliases)
-  parseTxt(node, datas, aliases)
   let loop = parseLoop(node, datas, aliases)
   if (!(loop.hasLoop && loop.isParsed)) {
     for (var i = 0; i < node.children.length; i++) {
       recursiveParsing(node.children[i], datas, aliases)
     }
   }
+  node = loop.newNode
+  if (!loop.hasLoop || (loop.hasLoop && loop.isParsed)) {
+    parseBlade(node, datas, aliases)
+  }
 }
 
 export default {
   parseTxt,
   parseLoop,
+  parseBlade,
   recursiveParsing
 }
