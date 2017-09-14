@@ -35,26 +35,11 @@
         './alert_template.html'
       ], '#templateContainer').then(() => {
         event.data.applications.htmlGenerator.registerTemplates([
-          {
-            name: 'alert',
-            node: document.getElementById('alert')
-          },
-          {
-            name: 'invasion',
-            node: document.getElementById('invasion')
-          },
-          {
-            name: 'void',
-            node: document.getElementById('void')
-          },
-          {
-            name: 'sortie',
-            node: document.getElementById('sortie')
-          },
-          {
-            name: 'baro',
-            node: document.getElementById('baro')
-          },
+          { name: 'alert',    node: document.getElementById('alert')    },
+          { name: 'invasion', node: document.getElementById('invasion') },
+          { name: 'void',     node: document.getElementById('void')     },
+          { name: 'sortie',   node: document.getElementById('sortie')   },
+          { name: 'baro',     node: document.getElementById('baro')     }
         ])
         event.data.applications.wfConsumation.getData(event.data.applications.request).then(function (wfInformations) {
           console.log(wfInformations)
