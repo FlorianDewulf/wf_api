@@ -73,7 +73,7 @@ function getData (datas, key, aliases) {
   }
 
   let currentData = datas
-  key = key.replace(/(\[|\])/g, '.')
+  key = key.replace(/(\[|\])/g, '.').trim()
   let splittedKey = customSplit(key, '.')
   // For the loops
   for (let aliasName in aliases) {
@@ -105,12 +105,17 @@ function parseTxt (node, datas, aliases) {
       node.removeAttribute('hg-text')
     }
   }
+}
+
+// Set text content thanks to blade notation
+function parseBlade (node, datas, aliases) {
   // to edit
   let innerHtml = node.innerHTML
-  let bladeNotations = innerHtml.match(/\{\{[ \t]*[A-Za-z0-9_\.\[\](, )'"]+[ \t]*\}\}/g)
+  let bladeNotations = innerHtml.match(/\{\{[ \t]*[A-Za-z0-9_.[\](, )'"]+[ \t]*\}\}/g)
   if (bladeNotations) {
     for (let bladeNotation in bladeNotations) {
-      let internalValue = bladeNotations[bladeNotation].match(/\{\{[ \t]*([A-Za-z0-9_\.\[\](, )'"]+)[ \t]*\}\}/)
+      let internalValue = bladeNotations[bladeNotation].match(/\{\{[ \t]*([A-Za-z0-9_.[\](, )'"]+)[ \t]*\}\}/)
+      console.log(internalValue)
       let val = getData(datas, internalValue[1], aliases)
       if (typeof val !== 'undefined') {
         innerHtml = innerHtml.replace(bladeNotations[bladeNotation], val)
@@ -125,7 +130,8 @@ function parseTxt (node, datas, aliases) {
 function parseLoop (node, datas, aliases) {
   let returnValue = {
     hasLoop: (node.getAttribute('hg-loop') !== null),
-    isParsed: false
+    isParsed: false,
+    newNode: node
   }
   if (node.getAttribute('hg-loop')) {
     // Get the pattern "xx in xxx"
@@ -148,6 +154,7 @@ function parseLoop (node, datas, aliases) {
         parent.insertBefore(container, node)
         let template = parent.removeChild(node)
         template.removeAttribute('hg-loop')
+        returnValue.newNode = container
 
         for (let i = 0; i < aliasValue.length; ++i) {
           aliases[match[1]].iteration = i
@@ -164,17 +171,22 @@ function parseLoop (node, datas, aliases) {
 // The recursive call to parse the attributes
 function recursiveParsing (node, datas, aliases = {}) {
   parseTxt(node, datas, aliases)
-  parseTxt(node, datas, aliases)
   let loop = parseLoop(node, datas, aliases)
   if (!(loop.hasLoop && loop.isParsed)) {
     for (var i = 0; i < node.children.length; i++) {
       recursiveParsing(node.children[i], datas, aliases)
     }
   }
+  node = loop.newNode
+  console.log(node, !loop.hasLoop || (loop.hasLoop && loop.isParsed))
+  if (!loop.hasLoop || (loop.hasLoop && loop.isParsed)) {
+    parseBlade(node, datas, aliases)
+  }
 }
 
 export default {
   parseTxt,
   parseLoop,
+  parseBlade,
   recursiveParsing
 }
