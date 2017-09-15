@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Source: htmlGenerator/helpers/dataParser.js | WF API</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="">
+        
+            <img src="img/toast-ui.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">WF API</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Modules</h3><ul><li><a href="module-htmlGenerator_helpers_arrayParser.html">htmlGenerator/helpers/arrayParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/arrayParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_arrayParser.html#~parseLoop">parseLoop</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_dataParser.html">htmlGenerator/helpers/dataParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/dataParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_dataParser.html#~customSplit">customSplit</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getData">getData</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getFunctionData">getFunctionData</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getVariableData">getVariableData</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_datasetParser.html">htmlGenerator/helpers/datasetParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/datasetParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_datasetParser.html#~recursiveParsing">recursiveParsing</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_textParser.html">htmlGenerator/helpers/textParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/textParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_textParser.html#~parseBlade">parseBlade</a></li><li><a href="module-htmlGenerator_helpers_textParser.html#~parseTxt">parseTxt</a></li></ul></div></li><li><a href="module-htmlGenerator_index.html">htmlGenerator/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/index_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_index.html#.applyTemplate">applyTemplate</a></li><li><a href="module-htmlGenerator_index.html#.loadExternalTemplates">loadExternalTemplates</a></li><li><a href="module-htmlGenerator_index.html#.registerTemplates">registerTemplates</a></li><li><a href="module-htmlGenerator_index.html#~loadTemplate">loadTemplate</a></li><li><a href="module-htmlGenerator_index.html#~mapData">mapData</a></li></ul></div></li><li><a href="module-request_index.html">request/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:request/index_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-request_index.html#.delete">delete</a></li><li><a href="module-request_index.html#.get">get</a></li><li><a href="module-request_index.html#.patch">patch</a></li><li><a href="module-request_index.html#.post">post</a></li><li><a href="module-request_index.html#.put">put</a></li><li><a href="module-request_index.html#~bindOnRequest">bindOnRequest</a></li><li><a href="module-request_index.html#~flatObject">flatObject</a></li><li><a href="module-request_index.html#~getEncodedURL">getEncodedURL</a></li><li><a href="module-request_index.html#~getXMLHttpRequest">getXMLHttpRequest</a></li><li><a href="module-request_index.html#~setHeaders">setHeaders</a></li></ul></div></li><li><a href="module-wfConsumation_cleaner.html">wfConsumation/cleaner</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/cleaner_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_cleaner.html#.cleanPayload">cleanPayload</a></li></ul></div></li><li><a href="module-wfConsumation_helpers_formatter.html">wfConsumation/helpers/formatter</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/helpers/formatter_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_helpers_formatter.html#.formatAlert">formatAlert</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatBaro">formatBaro</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatInvasion">formatInvasion</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatSortie">formatSortie</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatVoidFissure">formatVoidFissure</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~exists">exists</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~existsOrDefault">existsOrDefault</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getFaction">getFaction</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getMissionType">getMissionType</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getNode">getNode</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getRewards">getRewards</a></li></ul></div></li><li><a href="module-wfConsumation_index.html">wfConsumation/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/index_sub"></div></li><li><a href="module-wfConsumation_WFRequest.html">wfConsumation/WFRequest</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/WFRequest_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-wfConsumation_WFRequest.html#~AjaxRequest">AjaxRequest</a></li><li><a href="module-wfConsumation_WFRequest.html#~cleanContent">cleanContent</a></li><li><a href="module-wfConsumation_WFRequest.html#~content">content</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="module-wfConsumation_WFRequest-WFRequest.html">WFRequest</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/WFRequest~WFRequest_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_WFRequest-WFRequest.html#concurrentFormatter">concurrentFormatter</a></li><li><a href="module-wfConsumation_WFRequest-WFRequest.html#getData">getData</a></li><li><a href="module-wfConsumation_WFRequest-WFRequest.html#infos">infos</a></li></ul></div></li></ul></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module htmlGenerator/helpers/dataParser */
+
+/**
+ * Like the normal split but don't split in a function or in a string
+ * @param {string} str The string to split
+ * @param {string} delimiter The character which will be used to split
+ * @return array
+ */
+function customSplit (str, delimiter) {
+  let splitted = []
+  let beginning = 0
+  let preventSplit = {
+    delimiter: '',
+    activated: false
+  }
+  for (let i = 0; i &lt; str.length; ++i) {
+    if (preventSplit.activated === true &amp;&amp;
+      (
+        (str[i] === '"' &amp;&amp; preventSplit.delimiter === '"') ||
+        (str[i] === "'" &amp;&amp; preventSplit.delimiter === "'") ||
+        (str[i] === ')' &amp;&amp; preventSplit.delimiter === '(')
+      )
+    ) {
+      if (i > 0 &amp;&amp; str[i - 1] !== '\\') {
+        preventSplit.delimiter = ''
+        preventSplit.activated = false
+        continue
+      }
+    }
+    if (preventSplit.activated === false &amp;&amp; (str[i] === '"' || str[i] === "'" || str[i] === '(')) {
+      preventSplit.delimiter = str[i]
+      preventSplit.activated = true
+      continue
+    }
+    if (preventSplit.activated === false &amp;&amp; str[i] === delimiter) {
+      splitted.push(str.substr(beginning, i - beginning))
+      beginning = i + 1
+    }
+  }
+  splitted.push(str.substr(beginning, str.length - beginning))
+  return splitted
+}
+/**
+ * Get the variable value
+ * @param {object} currentData The current state of the data
+ * @param {string} key The key to access
+ * @return mixed
+ */
+function getVariableData (currentData, key) {
+  if (typeof currentData[key] === 'undefined' || currentData[key] === null) {
+    return undefined
+  }
+  return currentData[key]
+}
+/**
+ * Execute a function and return the result
+ * @param {object} currentData The current state of the data
+ * @param {string} key The key to access
+ * @param {object} datas The original dataset
+ * @param {object} aliases The alias dataset
+ * @return mixed
+ */
+function getFunctionData (currentData, key, datas, aliases) {
+  let functionParameters = key.match(/([A-Za-z0-9_]+)\(([A-Za-z0-9_. ,'"[\]\\]+)\)/)
+  if (functionParameters) {
+    let parameters = customSplit(functionParameters[2], ',')
+    let toEval = 'currentData[key.substr(0, key.indexOf(\'(\'))]('
+    parameters.map((parameter, index) => {
+      if (index !== 0) {
+        toEval += ', '
+      }
+      if (parameter.trim().match(/(\d+)|('.*')|(".*")/)) {
+        toEval += parameter.trim()
+      } else {
+        toEval += "'" + getData(datas, parameter.trim(), aliases) + "'"
+      }
+    })
+    return eval(toEval + ')')
+  } else {
+    console.log('Method with a bad format')
+    return undefined
+  }
+}
+/**
+ * Retrieve the data by a key, if the key is a sub object, we go deeper
+ * @param {object} datas The original dataset
+ * @param {string} key The key to access
+ * @param {object} aliases The alias dataset
+ * @return mixed
+ */
+function getData (datas, key, aliases) {
+  if (typeof key === 'undefined' || typeof datas === 'undefined' || !datas || !key) {
+    return undefined
+  }
+
+  let currentData = datas
+  key = key.replace(/(\[|\])/g, '.').trim()
+  let splittedKey = customSplit(key, '.')
+  // For the loops
+  for (let aliasName in aliases) {
+    if (splittedKey[0].startsWith(aliasName)) {
+      currentData = aliases[aliasName].value[aliases[aliasName].iteration]
+      splittedKey.splice(0, 1)
+      break
+    }
+  }
+  for (let i = 0; i &lt; splittedKey.length; ++i) {
+    if (splittedKey[i].length === 0) {
+      continue
+    }
+    if (splittedKey[i].includes('(')) {
+      return getFunctionData(currentData, splittedKey[i], datas, aliases)
+    } else {
+      currentData = getVariableData(currentData, splittedKey[i])
+    }
+  }
+  return currentData
+}
+
+export default {
+  customSplit,
+  getVariableData,
+  getFunctionData,
+  getData
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<footer>
+    <img class="logo" src="img/toast-ui.png" style="">
+    <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = '_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>

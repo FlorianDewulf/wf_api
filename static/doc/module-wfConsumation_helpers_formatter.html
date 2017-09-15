@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Module: wfConsumation/helpers/formatter | WF API</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="">
+        
+            <img src="img/toast-ui.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">WF API</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Modules</h3><ul><li><a href="module-htmlGenerator_helpers_arrayParser.html">htmlGenerator/helpers/arrayParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/arrayParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_arrayParser.html#~parseLoop">parseLoop</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_dataParser.html">htmlGenerator/helpers/dataParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/dataParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_dataParser.html#~customSplit">customSplit</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getData">getData</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getFunctionData">getFunctionData</a></li><li><a href="module-htmlGenerator_helpers_dataParser.html#~getVariableData">getVariableData</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_datasetParser.html">htmlGenerator/helpers/datasetParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/datasetParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_datasetParser.html#~recursiveParsing">recursiveParsing</a></li></ul></div></li><li><a href="module-htmlGenerator_helpers_textParser.html">htmlGenerator/helpers/textParser</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/helpers/textParser_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_helpers_textParser.html#~parseBlade">parseBlade</a></li><li><a href="module-htmlGenerator_helpers_textParser.html#~parseTxt">parseTxt</a></li></ul></div></li><li><a href="module-htmlGenerator_index.html">htmlGenerator/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:htmlGenerator/index_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-htmlGenerator_index.html#.applyTemplate">applyTemplate</a></li><li><a href="module-htmlGenerator_index.html#.loadExternalTemplates">loadExternalTemplates</a></li><li><a href="module-htmlGenerator_index.html#.registerTemplates">registerTemplates</a></li><li><a href="module-htmlGenerator_index.html#~loadTemplate">loadTemplate</a></li><li><a href="module-htmlGenerator_index.html#~mapData">mapData</a></li></ul></div></li><li><a href="module-request_index.html">request/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:request/index_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-request_index.html#.delete">delete</a></li><li><a href="module-request_index.html#.get">get</a></li><li><a href="module-request_index.html#.patch">patch</a></li><li><a href="module-request_index.html#.post">post</a></li><li><a href="module-request_index.html#.put">put</a></li><li><a href="module-request_index.html#~bindOnRequest">bindOnRequest</a></li><li><a href="module-request_index.html#~flatObject">flatObject</a></li><li><a href="module-request_index.html#~getEncodedURL">getEncodedURL</a></li><li><a href="module-request_index.html#~getXMLHttpRequest">getXMLHttpRequest</a></li><li><a href="module-request_index.html#~setHeaders">setHeaders</a></li></ul></div></li><li><a href="module-wfConsumation_cleaner.html">wfConsumation/cleaner</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/cleaner_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_cleaner.html#.cleanPayload">cleanPayload</a></li></ul></div></li><li><a href="module-wfConsumation_helpers_formatter.html">wfConsumation/helpers/formatter</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/helpers/formatter_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_helpers_formatter.html#.formatAlert">formatAlert</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatBaro">formatBaro</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatInvasion">formatInvasion</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatSortie">formatSortie</a></li><li><a href="module-wfConsumation_helpers_formatter.html#.formatVoidFissure">formatVoidFissure</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~exists">exists</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~existsOrDefault">existsOrDefault</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getFaction">getFaction</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getMissionType">getMissionType</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getNode">getNode</a></li><li><a href="module-wfConsumation_helpers_formatter.html#~getRewards">getRewards</a></li></ul></div></li><li><a href="module-wfConsumation_index.html">wfConsumation/index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/index_sub"></div></li><li><a href="module-wfConsumation_WFRequest.html">wfConsumation/WFRequest</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/WFRequest_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-wfConsumation_WFRequest.html#~AjaxRequest">AjaxRequest</a></li><li><a href="module-wfConsumation_WFRequest.html#~cleanContent">cleanContent</a></li><li><a href="module-wfConsumation_WFRequest.html#~content">content</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="module-wfConsumation_WFRequest-WFRequest.html">WFRequest</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:wfConsumation/WFRequest~WFRequest_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-wfConsumation_WFRequest-WFRequest.html#concurrentFormatter">concurrentFormatter</a></li><li><a href="module-wfConsumation_WFRequest-WFRequest.html#getData">getData</a></li><li><a href="module-wfConsumation_WFRequest-WFRequest.html#infos">infos</a></li></ul></div></li></ul></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>wfConsumation/helpers/formatter</h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id=".formatAlert">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>formatAlert<span class="signature">(originalAlerts)</span><span class="type-signature"> &rarr; {Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line91">line 91</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Create an clean object about the alerts
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>originalAlerts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The original object for the alerts</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".formatBaro">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>formatBaro<span class="signature">(voidTraders)</span><span class="type-signature"> &rarr; {Object|Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line197">line 197</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Create an clean object about the void trader(s)
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>voidTraders</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The original object for the void traders</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".formatInvasion">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>formatInvasion<span class="signature">(originalInvasions)</span><span class="type-signature"> &rarr; {Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line116">line 116</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Create an clean object about the invasions
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>originalInvasions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The original object for the invasions</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".formatSortie">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>formatSortie<span class="signature">(sortieMissions)</span><span class="type-signature"> &rarr; {Object|Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line167">line 167</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Create an clean object about the sortie(s)
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sortieMissions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The original object for the sorties</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id=".formatVoidFissure">
+            
+                <span class="type-signature"><span class="icon green">static</span> </span>formatVoidFissure<span class="signature">(originalMissions)</span><span class="type-signature"> &rarr; {Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line147">line 147</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Create an clean object about the fissures
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>originalMissions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The original object for the fissures</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~exists">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>exists<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line13">line 13</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Check the existence of a variable
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">mixed</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The variable to test</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">boolean</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~existsOrDefault">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>existsOrDefault<span class="signature">(value, defaultValue)</span><span class="type-signature"> &rarr; {mixed}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line23">line 23</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Check existence or pick the default value
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">mixed</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">The variable to test</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultValue</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">mixed</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last">The value to return if the test is wrong</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">mixed</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~getFaction">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>getFaction<span class="signature">(code)</span><span class="type-signature"> &rarr; {string}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line63">line 63</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Get the right faction
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The code of the faction</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">string</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~getMissionType">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>getMissionType<span class="signature">(code)</span><span class="type-signature"> &rarr; {string}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line72">line 72</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Get the right mission
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The code of the mission</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">string</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~getNode">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>getNode<span class="signature">(code)</span><span class="type-signature"> &rarr; {Object}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line81">line 81</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Get the node information
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The code of the node information</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Object</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="~getRewards">
+            
+                <span class="type-signature"><span class="icon green">inner</span> </span>getRewards<span class="signature">(initialRewards)</span><span class="type-signature"> &rarr; {Array}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="wfConsumation_helpers_formatter.js.html">wfConsumation/helpers/formatter.js</a></code>,
+                <code><a href="wfConsumation_helpers_formatter.js.html#line35">line 35</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Render a rewards object
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>initialRewards</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The initial rewards</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Array</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<footer>
+    <img class="logo" src="img/toast-ui.png" style="">
+    <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = 'module:wfConsumation/helpers/formatter_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>

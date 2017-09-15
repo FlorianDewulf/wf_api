@@ -3,12 +3,23 @@ import constants from '../constants'
 import languages from '../../../config/languages.json'
 import { solNodes } from 'warframe-worldstate-data'
 
-// Check existence
+/** @module wfConsumation/helpers/formatter */
+
+/**
+ * Check the existence of a variable
+ * @param {mixed} value The variable to test
+ * @return {boolean}
+ */
 function exists (value) {
   return (value && typeof value !== 'undefined')
 }
 
-// Check existence or pick the default value
+/**
+ * Check existence or pick the default value
+ * @param {mixed} value The variable to test
+ * @param {mixed} defaultValue The value to return if the test is wrong
+ * @return {mixed}
+ */
 function existsOrDefault (value, defaultValue = null) {
   if (defaultValue === null) {
     return exists(value)
@@ -16,7 +27,11 @@ function existsOrDefault (value, defaultValue = null) {
   return exists(value) ? value : defaultValue
 }
 
-// Render a rewards object
+/**
+ * Render a rewards object
+ * @param {Array} initialRewards The initial rewards
+ * @return {Array}
+ */
 function getRewards (initialRewards) {
   let rewards = []
   if (exists(initialRewards.items)) {
@@ -40,23 +55,39 @@ function getRewards (initialRewards) {
   return rewards
 }
 
-// Get the faction name
+/**
+ * Get the right faction
+ * @param {string} code The code of the faction
+ * @return {string}
+ */
 function getFaction (code) {
   return existsOrDefault(constants.factions[code], code)
 }
 
-// Get the mission type
+/**
+ * Get the right mission
+ * @param {string} code The code of the mission
+ * @return {string}
+ */
 function getMissionType (code) {
   return existsOrDefault(constants.missions[code], { value: code }).value
 }
 
-// Get the node information
+/**
+ * Get the node information
+ * @param {string} code The code of the node information
+ * @return {Object}
+ */
 function getNode (code) {
   return existsOrDefault(solNodes[code], code)
 }
 
 export default {
-  // Translate the alert object
+  /**
+   * Create an clean object about the alerts
+   * @param {Object} originalAlerts The original object for the alerts
+   * @return {Array}
+   */
   formatAlert: (originalAlerts) => {
     return originalAlerts.map((originalAlert, alertIndex) => {
       let faction = getFaction(originalAlert.MissionInfo.faction)
@@ -77,7 +108,11 @@ export default {
       }
     })
   },
-  // translate the invastion object
+  /**
+   * Create an clean object about the invasions
+   * @param {Object} originalInvasions The original object for the invasions
+   * @return {Array}
+   */
   formatInvasion: (originalInvasions) => {
     let filteredInvasions = originalInvasions.filter((originalInvasion) => {
       return originalInvasion.Completed === false
@@ -104,14 +139,18 @@ export default {
       }
     })
   },
-  // translate the "ActiveMissions" object
+  /**
+   * Create an clean object about the fissures
+   * @param {Object} originalMissions The original object for the fissures
+   * @return {Array}
+   */
   formatVoidFissure: (originalMissions) => {
     return originalMissions.map((originalMission, alertIndex) => {
       let node = getNode(originalMission.Node)
       let level = existsOrDefault(constants.fissures[originalMission.Modifier], originalMission.Modifier)
       let remaining = moment.duration((moment(originalMission.Expiry.$date.$numberLong / 1000) - moment().unix()), 's').humanize(true)
 
-      return { 
+      return {
         remaining: remaining,
         level: level,
         node: node.value,
@@ -120,7 +159,11 @@ export default {
       }
     })
   },
-  // translate the "Sorties" object
+  /**
+   * Create an clean object about the sortie(s)
+   * @param {Object} sortieMissions The original object for the sorties
+   * @return {Object|Array}
+   */
   formatSortie: (sortieMissions) => {
     let sorties = sortieMissions.map((sortieMission, alertIndex) => {
       let boss = existsOrDefault(constants.sorties.bosses[sortieMission.Boss], { name: sortieMission.Boss }).name
@@ -140,13 +183,17 @@ export default {
       return { remaining, boss, faction, missions }
     })
 
-    if (sorties.length == 1) {
+    if (sorties.length === 1) {
       return sorties[0]
     } else {
       return sorties
     }
   },
-  // translate the "VoidTraders" object
+  /**
+   * Create an clean object about the void trader(s)
+   * @param {Object} voidTraders The original object for the void traders
+   * @return {Object|Array}
+   */
   formatBaro: (voidTraders) => {
     let baro = voidTraders.map((voidTrader, alertIndex) => {
       let node = getNode(voidTrader.Node)
@@ -160,7 +207,7 @@ export default {
       }
     })
 
-    if (baro.length == 1) {
+    if (baro.length === 1) {
       return baro[0]
     } else {
       return baro

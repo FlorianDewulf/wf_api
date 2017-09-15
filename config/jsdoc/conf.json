@@ -1,0 +1,11 @@
+{
+  "opts": {
+    "template": "node_modules/tui-jsdoc-template",
+    "encoding": "utf8",
+    "destination": "./static/doc/",
+    "recurse": true
+  },
+  "templates": {
+    "name": "WF API"
+  }
+}

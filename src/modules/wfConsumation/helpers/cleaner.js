@@ -1,4 +1,11 @@
+/** @module wfConsumation/cleaner */
+
 export default {
+  /**
+   * Clean the payload to remove useless keys
+   * @param {Object} payload The payload to clean
+   * @return {Object}
+   */
   cleanPayload: (payload) => {
     delete payload.Events
     delete payload.BuildLabel

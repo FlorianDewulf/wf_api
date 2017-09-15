@@ -1,10 +1,20 @@
 import cleaner from './helpers/cleaner'
 import formatter from './helpers/formatter'
 
-export default class WFRequest {
+/** @module wfConsumation/WFRequest */
+
+class WFRequest {
+  /**
+   * The constructor of the WFRequest
+   * @constructor
+   * @param {Object} AjaxRequest A module request object
+   */
   constructor (AjaxRequest) {
+    /** @member {Object} AjaxRequest An request module object */
     this.ajaxRequest = AjaxRequest
+    /** @member {Object} content The result of the ajax request */
     this.content = null
+    /** @member {Object} cleanContent The clean result */
     this.cleanContent = {
       datas: {}
     }
@@ -32,12 +42,11 @@ export default class WFRequest {
     })
   }
 
-  /*
-   * Transform the data with the formatter.
-   * Performed with the concurrency of the promises
+  /**
+   * Transform the data with the formatter. Performed with the concurrency of the promises
    */
   concurrentFormatter () {
-    return new Promise ((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       const formats = [
         { action: formatter.formatAlert, data: 'Alerts', target: 'alerts' },
         { action: formatter.formatInvasion, data: 'Invasions', target: 'invasions' },
@@ -46,7 +55,7 @@ export default class WFRequest {
         { action: formatter.formatBaro, data: 'VoidTraders', target: 'baro' }
       ]
       let promises = []
-      
+
       formats.map((format) => {
         promises.push(new Promise((_promiseResolve) => {
           try {
@@ -62,7 +71,6 @@ export default class WFRequest {
           }
         }))
       })
-      
       Promise.all(promises).then((promiseValues) => {
         promiseValues.map((promiseValue) => {
           this.cleanContent.datas[promiseValue.target] = promiseValue.value
@@ -72,7 +80,12 @@ export default class WFRequest {
     })
   }
 
+  /**
+   * The getter of the informations fetched
+   */
   get infos () {
     return this.cleanContent
   }
 }
+
+export default WFRequest

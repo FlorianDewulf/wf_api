@@ -3,13 +3,13 @@ export default {
     FC_GRINEER: 'Grineer',
     FC_CORPUS: 'Corpus',
     FC_INFESTATION: 'Infested',
-    FC_OROKIN: 'Corrupted',
+    FC_OROKIN: 'Corrupted'
   },
   fissures: {
     VoidT1: 'Lith',
     VoidT2: 'Meso',
     VoidT3: 'Neo',
-    VoidT4: 'Axi',
+    VoidT4: 'Axi'
   },
   missions: {
     MT_EXCAVATE: {
@@ -69,7 +69,7 @@ export default {
   },
   sorties: {
     malus: {
-      SORTIE_MODIFIER_LOW_ENERGY:'Energy Reduction',
+      SORTIE_MODIFIER_LOW_ENERGY: 'Energy Reduction',
       SORTIE_MODIFIER_IMPACT: 'Enemy Physical Enhancement: Impact',
       SORTIE_MODIFIER_SLASH: 'Enemy Physical Enhancement: Slash',
       SORTIE_MODIFIER_PUNCTURE: 'Enemy Physical Enhancement: Puncture',
@@ -85,9 +85,9 @@ export default {
       SORTIE_MODIFIER_FREEZE: 'Enemy Elemental Enhancement: Cold',
       SORTIE_MODIFIER_TOXIN: 'Enemy Elemental Enhancement: Toxin',
       SORTIE_MODIFIER_POISON: 'Enemy Elemental Enhancement: Toxin',
-      SORTIE_MODIFIER_HAZARD_RADIATION : 'Environmental Hazard: Radiation Pockets',
-      SORTIE_MODIFIER_HAZARD_MAGNETIC : 'Environmental Hazard: Electromagnetic Anomalies',
-      SORTIE_MODIFIER_HAZARD_FOG : 'Environmental Hazard: Dense Fog',
+      SORTIE_MODIFIER_HAZARD_RADIATION: 'Environmental Hazard: Radiation Pockets',
+      SORTIE_MODIFIER_HAZARD_MAGNETIC: 'Environmental Hazard: Electromagnetic Anomalies',
+      SORTIE_MODIFIER_HAZARD_FOG: 'Environmental Hazard: Dense Fog',
       SORTIE_MODIFIER_HAZARD_FIRE: 'Environmental Hazard: Fire',
       SORTIE_MODIFIER_HAZARD_ICE: 'Environmental Effect: Cryogenic Leakage',
       SORTIE_MODIFIER_HAZARD_COLD: 'Environmental Effect: Extreme Cold',
@@ -141,10 +141,6 @@ export default {
         name: 'Ambulas',
         faction: 'FC_CORPUS'
       },
-      SORTIE_BOSS_JACKAL: {
-        name: 'Jackal',
-        faction: 'FC_CORPUS'
-      },
       SORTIE_BOSS_NEF: {
         name: 'Nef Anyo',
         faction: 'FC_CORPUS'
@@ -165,6 +161,6 @@ export default {
         name: 'Mutalist Alad V',
         faction: 'FC_INFESTATION'
       }
-    },
+    }
   }
 }

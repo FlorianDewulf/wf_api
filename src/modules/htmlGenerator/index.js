@@ -2,12 +2,15 @@ import datasetParser from './datasetParser'
 
 let templates = {}
 
-function mapData (node, datas, recursive = false) {
-  let nodeToInsert = node
+/** @module htmlGenerator/index */
 
-  if (!recursive) {
-    nodeToInsert = node.cloneNode(true)
-  }
+/**
+ * Map data to a template
+ * @param {Object} request The request module
+ * @param {string} urls The url of the template
+ */
+function mapData (node, datas) {
+  let nodeToInsert = node.cloneNode(true)
 
   nodeToInsert.classList.remove('template')
   datasetParser.recursiveParsing(nodeToInsert, datas)
@@ -15,9 +18,13 @@ function mapData (node, datas, recursive = false) {
   return nodeToInsert
 }
 
-// Get the template thanks to Ajax
+/**
+ * Get a template using AJAX.
+ * @param {Object} request The request module
+ * @param {string} urls The url of the template
+ */
 function loadTemplate (request, url) {
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     request.get(url, {}, (result) => {
       resolve(result.responseText)
     })
@@ -26,7 +33,10 @@ function loadTemplate (request, url) {
 
 export default {
   /**
-   * Register templates and remove it from the dom to reuse it
+   * Load templates through a list of urls. Concurrency is used to increase the performance.
+   * @param {Object} request The request module
+   * @param {Array} urls The list of the urls
+   * @param {Array} templateContainer The selector or the node of the template container
    */
   loadExternalTemplates: (request, urls, templateContainer) => {
     let promises = []
@@ -41,10 +51,10 @@ export default {
     // Check the target node existence
     if (!nodeTarget) {
       console.log('Target doesn\'t exist')
-      error = true 
+      error = true
     }
 
-    return new Promise ((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (error) {
         resolve()
         return
@@ -65,7 +75,8 @@ export default {
     })
   },
   /**
-   * Register templates and remove it from the dom to reuse it
+   * Register templates and remove it from the dom to reuse it (with the method 'applyTemplate')
+   * @param {Array} registerList The list of the template to register
    */
   registerTemplates: (registerList) => {
     registerList.map((registerItem) => {
@@ -75,7 +86,7 @@ export default {
       if (typeof registerItem.node === 'string') {
         nodeTarget = document.querySelector(registerItem.node)
       }
-  
+
       // Check the target node existence
       if (!nodeTarget) {
         console.log('Target doesn\'t exist')
@@ -86,7 +97,11 @@ export default {
     })
   },
   /**
-   * 
+   * Use a template name to find in the template list the one register with this name.
+   * Bind the datas to the template and insert it in a new node.
+   * @param {string} templateName The name of the template
+   * @param {string|DOMNode} target The selector or the node of the target
+   * @param {Object} datas The data send to the template
    */
   applyTemplate: (templateName, target, datas) => {
     let nodeTarget = target

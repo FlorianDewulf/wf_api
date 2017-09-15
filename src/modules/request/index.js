@@ -1,6 +1,9 @@
 /* global XMLHttpRequest XDomainRequest */
+
+/** @module request/index */
+
 /**
- * Récupère un objet ajax
+ * Get an ajax object
  * @return XMLHttpRequest
  */
 function getXMLHttpRequest (args) {
@@ -21,10 +24,10 @@ function getXMLHttpRequest (args) {
 }
 
 /**
- * Bind les callbacks aux evenements de réussite / echec
- * @param {[XMLHttpRequest]}  request L'objet Ajax
- * @param {[function]}        success Le callback de succès
- * @param {[function]}        failure Le callback d'échec
+ * Bind the callbacks of the success and failure events
+ * @param {XMLHttpRequest} request The Ajax object
+ * @param {function} success The succes callback
+ * @param {function} failure The failure callback
  */
 function bindOnRequest (request, success, failure) {
   request.onreadystatechange = function () {
@@ -46,10 +49,10 @@ function bindOnRequest (request, success, failure) {
 }
 
 /**
- * Fonction récursive et traduit des objets imbriqués en string
- * @param  {[Object]} objToFlat L'objet à traduire
- * @param  {[String]} name      La clef déjà présente de base
- * @return {[String]}           [description]
+ * Recursive call to translate the objects in one string
+ * @param  {Object} objToFlat Object to translate
+ * @param  {String} name The existing key
+ * @return {String}
  */
 function flatObject (objToFlat, name) {
   let datas = ''
@@ -69,10 +72,10 @@ function flatObject (objToFlat, name) {
 }
 
 /**
- * Transforme une map de paramètres en 'query string'
- * @param  {[Object]}  args               Le payload
- * @param  {[Boolean]} bypassQuestionMark Pour savoir si on ajoute un '?' au début ou non
- * @return {[String]}                     La 'query string'
+ * Transforms a map of parameters to a query string
+ * @param  {Object}  args The payload
+ * @param  {Boolean} bypassQuestionMark To know if we add a '?' at the begining
+ * @return {String} The query string
  */
 function getEncodedURL (args, bypassQuestionMark = false) {
   let datas = ''
@@ -102,9 +105,9 @@ function getEncodedURL (args, bypassQuestionMark = false) {
 }
 
 /**
- * Assigne les headers de la requête
- * @param  {[XMLHTTPRequest]} request La requête actuelle
- * @param  {[Object]}         args    Les headers à assigner
+ * Assigns the headers to the request
+ * @param  {XMLHTTPRequest} request The current request
+ * @param  {Object} args The headers to assign
  */
 function setHeaders (request, args) {
   if (typeof args.headers !== 'undefined') {
@@ -115,6 +118,13 @@ function setHeaders (request, args) {
 }
 
 export default {
+  /**
+   * To call with a GET
+   * @param {string} url The url to call
+   * @param {Object} args The argument to put in the url
+   * @param {Function} success The success callback
+   * @param {Function} failure The failure callback
+   */
   get (url, args, success, failure) {
     var datas = getEncodedURL(args)
     var request = getXMLHttpRequest(args)
@@ -128,6 +138,13 @@ export default {
     request.send()
     return request
   },
+  /**
+   * To call with a DELETE
+   * @param {string} url The url to call
+   * @param {Object} args The argument to put in the url
+   * @param {Function} success The success callback
+   * @param {Function} failure The failure callback
+   */
   delete (url, args, success, failure) {
     var datas = getEncodedURL(args)
     var request = getXMLHttpRequest(args)
@@ -141,6 +158,13 @@ export default {
     request.send()
     return request
   },
+  /**
+   * To call with a POST
+   * @param {string} url The url to call
+   * @param {Object} args The argument to put in the payload
+   * @param {Function} success The success callback
+   * @param {Function} failure The failure callback
+   */
   post (url, args, success, failure) {
     var request = getXMLHttpRequest(args)
     if (!request) {
@@ -157,6 +181,13 @@ export default {
     }
     return request
   },
+  /**
+   * To call with a PUT
+   * @param {string} url The url to call
+   * @param {Object} args The argument to put in the payload
+   * @param {Function} success The success callback
+   * @param {Function} failure The failure callback
+   */
   put (url, args, success, failure) {
     var request = getXMLHttpRequest(args)
     if (!request) {
@@ -173,6 +204,13 @@ export default {
     }
     return request
   },
+  /**
+   * To call with a PATCH
+   * @param {string} url The url to call
+   * @param {Object} args The argument to put in the payload
+   * @param {Function} success The success callback
+   * @param {Function} failure The failure callback
+   */
   patch (url, args, success, failure) {
     var request = getXMLHttpRequest(args)
     if (!request) {
