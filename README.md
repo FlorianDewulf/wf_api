@@ -100,3 +100,8 @@ or if you don't use docker
 ### Stylesheet
 
 - [Sass](http://sass-lang.com/) is the most famous stylesheet language who extends the css with awesome features and a better syntax.
+
+### Documentation
+
+- [JSDoc](https://github.com/jsdoc3/jsdoc) is the tool used to generate the doc folder in `./static`
+- [TUI](https://github.com/nhnent/tui.jsdoc-template) is the template used for this awesome documentation style !
