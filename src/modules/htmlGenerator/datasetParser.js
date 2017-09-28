@@ -1,5 +1,6 @@
 import arrayParser from './helpers/arrayParser'
 import textParser from './helpers/textParser'
+import conditionnalParser from './helpers/conditionnalParser'
 
 /** @module htmlGenerator/helpers/datasetParser */
 
@@ -10,6 +11,7 @@ import textParser from './helpers/textParser'
  * @param {Object} aliases The alias datas created during the parsing
  */
 function recursiveParsing (node, datas, aliases = {}) {
+  conditionnalParser.parse(node, datas, aliases)
   textParser.parseTxt(node, datas, aliases)
   let loop = arrayParser.parseLoop(node, datas, aliases, recursiveParsing)
   if (!(loop.hasLoop && loop.isParsed)) {

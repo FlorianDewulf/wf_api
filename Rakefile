@@ -39,3 +39,10 @@ task :test do
   CACHE = ENV["CACHE"] == "true" ? "" : "--build"
   sh "docker-compose -p wf_api -f #{COMPOSE_FILE_DEV} up #{CACHE} tester"
 end
+
+# Unit Test
+task :doc do 
+  desc "Generate the documentation"
+  CACHE = ENV["CACHE"] == "true" ? "" : "--build"
+  sh "docker-compose -p wf_api -f #{COMPOSE_FILE_DEV} up #{CACHE} doc"
+end

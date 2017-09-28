@@ -85,6 +85,16 @@ or if you don't use docker
 
     $ npm run test
 
+## Launch the doc generation 
+
+    $ rake doc
+
+or
+
+    $ ./node_modules/.bin/jsdoc src -d static/doc
+
+(So of course you need to `npm i` before)
+
 ---
 
 ## Languages & tools

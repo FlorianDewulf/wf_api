@@ -20,5 +20,7 @@ COPY /scripts/watch.sh /os/bin
 RUN chmod +x /os/bin/watch.sh
 COPY /scripts/test.sh /os/bin
 RUN chmod +x /os/bin/test.sh
+COPY /scripts/doc.sh /os/bin
+RUN chmod +x /os/bin/doc.sh
 
 CMD npm start

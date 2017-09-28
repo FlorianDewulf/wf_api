@@ -3,3 +3,4 @@ dist/*.js
 dist/*.css
 static/report.html
 test/test-results.xml
+static/doc
